@@ -11,12 +11,11 @@ class Complex
        Complex(): real(0), imag(0){ }
        void input()
        {
-           cout << "Enter real and imaginary parts respectively: ";
+           cout << "Enter real and imaginary: ";
            cin >> real;
            cin >> imag;
        }
 
-       // Operator overloading
        Complex operator - (Complex c2)
        {
            Complex temp;
@@ -46,8 +45,6 @@ int main()
     cout<<"Enter second complex number:\n";
     c2.input();
 
-    // In case of operator overloading of binary operators in C++ programming, 
-    // the object on right hand side of operator is always assumed as argument by compiler.
     result = c1 - c2;
     result.output();
 
